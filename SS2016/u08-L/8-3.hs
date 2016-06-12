@@ -38,7 +38,7 @@ zipWith f (x:xs) (y:ys) = f x y : zipWith f xs ys
 -- 
 --
 -- unzipWith (\x -> (x+1, x+2)) [1..3]
--- ([1,2,3], [3,4,5])
+-- ([4,3,2],[5,4,3])
 
 unzipWith :: (a -> (b, c)) -> [a] -> ([b], [c])
 unzipWith f l = go l ([], [])
